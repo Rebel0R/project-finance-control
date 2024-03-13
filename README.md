@@ -2,7 +2,7 @@
 
 A ideia do projeto é permitir que o usuário realize o controle de suas transações através de uma interface prática. A aplicação permitir criar uma nova transação, deletar uma transação existente e atualizá-la.
 
-![Tela da aplicação](./img/tela-projeto.pngm)
+![Tela da aplicação](./img/tela-projeto.png)
 
 ## Funcionalidades 🤪
 
