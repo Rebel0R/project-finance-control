@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porquinho 2.0 | Gestão financeira</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon-24px.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <img
+          src="img/logo_Porquinho2.0.svg"
+          alt="logo porquinho"
+          id="logo-porquinho"
+        />
+        <p id="header-top-text">
+          Te ajudando a economizar de porquinho em porquinho!
+        </p>
+        <div class="header-cards-balance">
+          <div class="balance-top">
+            <div class="card-balance">
+              <div class="card-balance-top">
+                <span class="material-symbols-outlined">arrow_upward</span>
+                <p class="card-balance-title">Entrada</p>
+              </div>
+              <hr />
+              <p class="card-balance-value green-text" id="credit-balance">
+                R$ 0.00
+              </p>
+            </div>
+            <div class="card-balance">
+              <div class="card-balance-top">
+                <span class="material-symbols-outlined">south</span>
+                <p class="card-balance-title">Saída</p>
+              </div>
+              <hr />
+              <p class="card-balance-value red-text" id="debit-balance">
+                R$ 0.00
+              </p>
+            </div>
+          </div>
+          <div class="card-balance">
+            <p class="card-balance-title">Saldo total</p>
+            <hr />
+            <p class="card-balance-value" id="total-balance">R$ 0.00</p>
+          </div>
+        </div>
+      </div>
+      <button class="button-content header-button">Deletar transações</button>
+    </header>
+    <main>
+      <p class="text-title-section">Nova transação</p>
+      <form
+        class="inputs-transaction"
+        method="post"
+        action="http://localhost:3000/transactions"
+      >
+        <div class="input-content">
+          <label for="input-name" class="label-input">Nome da transação:</label>
+          <input type="text" id="input-name" />
+        </div>
+        <div class="input-content">
+          <label for="input-value" class="label-input"
+            >Valor da transação:</label
+          >
+          <input type="text" id="input-value" />
+        </div>
+        <div class="input-content">
+          <label for="select-type" class="label-input"
+            >Tipo da transação:</label
+          >
+          <select name="select-type" id="select-type">
+            <option value="entrada" selected>entrada</option>
+            <option value="saida">saida</option>
+          </select>
+        </div>
+        <button class="button-content form-button">Salvar transação</button>
+      </form>
+      <p class="text-title-section">Todas as transações</p>
+      <div class="all-transactions"></div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

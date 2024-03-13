@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffeee4;
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 32px;
+  gap: 16px;
+}
+
+header {
+  background-color: var(--surfface-background-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 392px;
+  height: 100vh;
+  padding: 24px 32px;
+}
+
+#logo-porquinho {
+  width: 304px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#header-top-text {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.header-cards-balance {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.balance-top {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.card-balance {
+  text-align: center;
+  font-family: "Poppins";
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-balance-top {
+  display: flex;
+  justify-content: center;
+}
+
+.card-balance-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-balance-value {
+  font-size: 18px;
+}
+
+.button-content {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-button {
+  background-color: var(--surfface-background-secondary);
+  color: var(--surfface-color-pink-secondary);
+  width: 100%;
+}
+.text-title-section {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--surfface-background-secondary);
+}
+.inputs-transaction {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+  align-items: end;
+}
+.input-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.label-input {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: var(--surfface-background-primary);
+  font-weight: 500;
+}
+input {
+  height: 44px;
+  padding: 0 8px;
+  font-family: "Poppins";
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid var(--surfface-color-gray);
+}
+
+select {
+  height: 44px;
+  padding: 0 8px;
+  font-family: "Poppins";
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid var(--surfface-color-gray);
+}
+
+.form-button {
+  background-color: var(--surfface-background-primary);
+  color: var(--surfface-color-pink-secondary);
+  white-space: nowrap;
+}
+
+.all-transactions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  align-items: end;
+}
+
+.input-transaction-list {
+  width: 100%;
+}
+
+hr {
+  color: var(--surfface-color-gray);
+}
+
+.green-text {
+  color: #4acf77;
+}
+
+.red-text {
+  color: #ff463e;
+}
+
+:root {
+  --surfface-background-primary: #1aa19c;
+  --surfface-background-secondary: #f56ca4;
+  --surfface-color-pink-secondary: #fcdecc;
+  --surfface-color-gray: #cdcdcd;
+}
